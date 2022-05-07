@@ -4,12 +4,14 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheNav from './components/TheNav.vue'
 import TheMobileNav from './components/TheMobileNav.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
 <TheNav />
-  <router-view class="min-h-screen bg-primary-gray w-full text-white font-bold px-20 py-4 mx-auto"/>
+  <router-view class="min-h-screen bg-primary-gray w-full text-white font-bold lg:px-20 py-4 mx-auto pb-40 sm:pb-4"/>
   <TheMobileNav class="sm:hidden"/>
+  <Footer/>
 </template>
 
 <style >
