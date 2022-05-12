@@ -17,7 +17,7 @@
             <p>Skill rating {{ skill.rating }}.0</p>
         </div>
     </div>
-    <div class="flex w-full flex-col items-start  text-left p-8" v-if="!skillsList[searchedOption]">
+    <div class="flex w-full flex-col items-start  text-left p-8" v-if="!skillsList[searchedOption] && searchedOption != 'help'">
         <p>Your search - <span class="font-bold">{{ this.$route.params.details }} </span> - did not match any documents.</p>
         <p>Suggestions:</p>
         <ul class="list-disc">
@@ -28,6 +28,16 @@
         </ul>
         <img src="/src/assets/img/not_found.svg" class="h-72" alt="">
     </div>    
+    <div v-if="searchedOption == 'help'" class="flex w-full flex-col items-start  text-left p-8" >
+        <p class="w-2/3">Wow ! Is there really a need to help ? Pperation of this application is similar to way google works, the application is intuitive as all of my appliactions are :)) so I dont see any reasons to help...anyway:</p>
+        <p>To look what interest you about my person just type one of these words in search bar above</p>
+        <p >"front-end" : for my skills connected with Front-End development </p>
+        <p>"back-end" : for my skills connected with Front-End development </p>
+        <p>"others" : for my others skills </p>
+        <p>"projects" : for my projects list </p>
+        <p>Search engine is intuitive, you can even type "front" and it will still show some results. Try it out !</p>
+        <img src="/src/assets/img/help.svg" class="h-72 my-8" alt="">
+    </div>   
 </template>
 
 <script>
@@ -52,9 +62,11 @@ import skills from '/src/skills.json'
                 else if(par.includes("BACK"))
                     return "backEnd";
                 else if(par.includes("PRO"))
-                    return "projekty";
-                else if(par.includes("IN"))
-                    return "inne";              
+                    return "projects";
+                else if(par.includes("OTH"))
+                    return "others";
+                else if(par.includes("HEL"))
+                    return "help";               
                 else
                     return "error";
             }

@@ -1,5 +1,5 @@
 <template>
-        <button class=" font-bold rounded-lg p-2 m-2 border " :class="{ 'bg-primary-red border-red-700': variant=='red','bg-white border-gray-100 text-black': variant=='white', }">
+        <button class=" font-bold rounded-lg p-2 m-2 border " :class="{ 'bg-primary-red border-red-700 text-white': variant=='red','bg-white border-gray-100 text-black': variant=='white', }">
             <slot></slot>
         </button>
 </template>

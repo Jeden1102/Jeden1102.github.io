@@ -1,18 +1,15 @@
 <template>
-    <div class="flex items-center justify-center flex-col w-full h-screen ">
+    <div class="flex items-center justify-center flex-col w-full h-screen relative">
+        <button @click="showTooltipMethod" class="absolute top-8 right-8 bg-gray-200 border border-gray-400 text-white p-4 rounded-lg">
+            <img src="/src/assets/img/icons/question.png" class="h-8" alt="">
+        </button>
+        <MyTooltip v-on:hide="showTooltipMethod" v-if="showTooltip"/>
             <div v-if="!this.$route.params.details" class="flex items-center justify-center flex-col w-full h-screen">
-                Dostępne wyszukiwania :
-                <ul>
-                    <li>Front-end</li>
-                    <li>Back-end</li>
-                    <li>Inne</li>
-                    <li>Projekty</li>
-                </ul>
                 <img src="/src/assets/img/google_logo.png" alt="">
-                <input v-model="searchInput" type="text" class="search-input mt-8 px-4" >
+                <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4" >
                 <div class="flex">
-                    <button @click="goToPage" class="search-btn">Szukaj w Google</button>
-                    <button class="search-btn">Szczęśliwy traf</button>
+                    <button @click="goToPage"  class="search-btn">Google search</button>
+                    <button @click="randomPage" class="search-btn">I'm Feeling Lucky</button>
                 </div>
             </div>
             <div v-else class="flex items-center justify-start flex-col w-full h-screen">
@@ -22,10 +19,15 @@
 </template>
 
 <script>
+import MyTooltip from '/src/components/MyTooltip.vue';
     export default {
+        components:{
+            MyTooltip,
+        },
         data() {
             return {
                 searchInput:'',
+                showTooltip:false,
             }
         },
         methods: {
@@ -33,6 +35,14 @@
                 //w lucky traf dać easter egga -> TO TEN EASTER EGG, WIĘCEJ NIE MA :) OBIECUJĘ
                 this.$router.push({name:'fancyList',params:{details:this.searchInput}});
                 this.searchInput = '';
+            },
+            showTooltipMethod(){
+                this.showTooltip = !this.showTooltip;
+            },
+            randomPage(){
+                let pages = ["front","back","projects","others"];
+                let rand = Math.floor(Math.random()*pages.length);
+                this.$router.push({name:'fancyList',params:{details:pages[rand]}});
             }
         },
     }

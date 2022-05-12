@@ -23,7 +23,7 @@
             "rating":3
         }
     },
-    "inne":{
+    "others":{
         "Insomnia":{
             "name":"Insomnia",
             "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
@@ -35,7 +35,7 @@
             "rating":3
         }
     },
-    "projekty":{
+    "projects":{
         "Pizzeria Client View":{
             "name":"Pizzeria Client View",
             "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
