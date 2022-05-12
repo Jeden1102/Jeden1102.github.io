@@ -1,10 +1,10 @@
 <template>
-    <div class="flex items-center justify-center flex-col w-full h-screen relative">
-        <button @click="showTooltipMethod" class="absolute top-8 right-8 bg-gray-200 border border-gray-400 text-white p-4 rounded-lg">
+    <div class="flex items-center justify-center flex-col w-full min-h-screen relative">
+        <button @click="showTooltipMethod" class="fixed w-20 h-20 flex items-center justify-center lg:absolute bottom-28 lg:top-8 right-8 bg-gray-200 border border-gray-400 text-white p-4 rounded-lg">
             <img src="/src/assets/img/icons/question.png" class="h-8" alt="">
         </button>
         <MyTooltip v-on:hide="showTooltipMethod" v-if="showTooltip"/>
-            <div v-if="!this.$route.params.details" class="flex items-center justify-center flex-col w-full h-screen">
+            <div v-if="!this.$route.params.details" class="flex items-center justify-center flex-col w-full min-h-screen">
                 <img src="/src/assets/img/google_logo.png" alt="">
                 <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4" >
                 <div class="flex">
@@ -12,7 +12,7 @@
                     <button @click="randomPage" class="search-btn">I'm Feeling Lucky</button>
                 </div>
             </div>
-            <div v-else class="flex items-center justify-start flex-col w-full h-screen">
+            <div v-else class="flex items-center justify-start flex-col w-full min-h-screen">
                 <router-view ></router-view>
             </div>
     </div>
@@ -63,6 +63,11 @@ import MyTooltip from '/src/components/MyTooltip.vue';
     width: 438px !important;
     width: auto;
     max-width: 584px;
+}
+@media(max-width:500px){
+    .search-input{
+        width:300px !important;
+    }
 }
 .search-input:hover,:focus{
         background-color: #fff;

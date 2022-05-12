@@ -2,13 +2,38 @@
     "frontEnd":{
         "HTML":{
             "name":"HTML5",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. HTML",
+            "desc":"First language which I've started to learn I've created thousands of static web pages which looked awful.",
             "rating":5
         },
         "CSS":{
             "name":"CSS3",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. CSS",
+            "desc":"After a while of learing HTML I've noticed that I'd like to make my pages look prettier, I've learned CSS, and then went ahead and learned some CSS preprocessors and libraries",
             "rating":4
+        },
+        "Tailwind/Bootstrap/Vuetify":{
+            "name":"Tailwind/Bootstrap/Vuetify",
+            "desc":"Styling libraries which I mainly use in my projects - I'm in love with Tailwind but shhh...",
+            "rating":4
+        },
+        "SCSS":{
+            "name":"SCSS",
+            "desc":"Preprocessor which I've learned to write CSS faster.",
+            "rating":3
+        },
+        "JS":{
+            "name":"JavaScript",
+            "desc":"The mother of Web Development, I totally love it and made a lot of Vanilla JS apps to learn WebDev or cheat in some WebGames, but don't tell anybody.",
+            "rating":4
+        },
+        "VUE":{
+            "name":"Vue3",
+            "desc":"First JS framwork which I've decided to learn, the decision of choosing between vue/react or angular was spontanious and at this moment I'm happy that I've choosen Vue. Btw. porfolio is writted in Vue as well.",
+            "rating":4
+        },
+        "Angular":{
+            "name":"Angular",
+            "desc":"Next JS framwork which I've been learning for a while in school, I'm not strong in it but with the help of docs I'm sure I'd create some small apps.",
+            "rating":2
         }
     },
     "backEnd":{

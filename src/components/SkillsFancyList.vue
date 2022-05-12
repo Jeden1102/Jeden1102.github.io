@@ -1,9 +1,9 @@
 <template>
-    <div class="flex p-8 w-full items-start">
-        <router-link :to="{name:'fancy'}">
-            <img class="small-logo" src="/src/assets/img/google_logo.png" alt="">
+    <div class="flex p-8 flex-col sm:flex-row w-full items-start justify-center sm:justify-start">
+        <router-link class="mx-auto sm:mx-0 " :to="{name:'fancy'}">
+            <img class="small-logo mx-auto " src="/src/assets/img/google_logo.png" alt="">
         </router-link>
-        <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4" >
+        <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4 mx-auto sm:mx-0" >
     </div>
     <div  class="flex items-start w-full p-4">
     <p v-if="skillsList[searchedOption]">About {{ Object.keys( skillsList[searchedOption] ).length}} results  (0.33s) </p>
