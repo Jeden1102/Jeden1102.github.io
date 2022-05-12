@@ -1,0 +1,50 @@
+{
+    "frontEnd":{
+        "HTML":{
+            "name":"HTML5",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. HTML",
+            "rating":5
+        },
+        "CSS":{
+            "name":"CSS3",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. CSS",
+            "rating":4
+        }
+    },
+    "backEnd":{
+        "PHP":{
+            "name":"PHP7",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
+            "rating":4
+        },
+        "SQL":{
+            "name":"SQL",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
+            "rating":3
+        }
+    },
+    "inne":{
+        "Insomnia":{
+            "name":"Insomnia",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
+            "rating":4
+        },
+        "PhotoShop":{
+            "name":"PhotoShop",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
+            "rating":3
+        }
+    },
+    "projekty":{
+        "Pizzeria Client View":{
+            "name":"Pizzeria Client View",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
+            "rating":4
+        },
+        "Pizzeria Admin Panel":{
+            "name":"Pizzeria Admin Panel",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
+            "rating":3
+        }
+    }
+}

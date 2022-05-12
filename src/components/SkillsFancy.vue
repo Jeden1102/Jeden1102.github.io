@@ -1,0 +1,84 @@
+<template>
+    <div class="flex items-center justify-center flex-col w-full h-screen ">
+            <div v-if="!this.$route.params.details" class="flex items-center justify-center flex-col w-full h-screen">
+                Dostępne wyszukiwania :
+                <ul>
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                    <li>Inne</li>
+                    <li>Projekty</li>
+                </ul>
+                <img src="/src/assets/img/google_logo.png" alt="">
+                <input v-model="searchInput" type="text" class="search-input mt-8 px-4" >
+                <div class="flex">
+                    <button @click="goToPage" class="search-btn">Szukaj w Google</button>
+                    <button class="search-btn">Szczęśliwy traf</button>
+                </div>
+            </div>
+            <div v-else class="flex items-center justify-start flex-col w-full h-screen">
+                <router-view ></router-view>
+            </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                searchInput:'',
+            }
+        },
+        methods: {
+            goToPage(){
+                //w lucky traf dać easter egga -> TO TEN EASTER EGG, WIĘCEJ NIE MA :) OBIECUJĘ
+                this.$router.push({name:'fancyList',params:{details:this.searchInput}});
+                this.searchInput = '';
+            }
+        },
+    }
+</script>
+
+<style  >
+
+.small-logo{
+    transform: scale(.7);
+}
+.search-input{
+        display: flex;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    width: 438px !important;
+    width: auto;
+    max-width: 584px;
+}
+.search-input:hover,:focus{
+        background-color: #fff;
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+.search-btn{
+        background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.search-btn:hover{
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+</style>
