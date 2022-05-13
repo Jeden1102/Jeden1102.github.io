@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-24 bg-white flex items-center justify-around fixed left-0 bottom-0">
+    <div class="w-full h-16 bg-white flex items-center justify-around fixed left-0 bottom-0">
         <router-link class="hidden x-sm:flex"  :to="{name:'Home'}">
             <h2 class="flex text-3xl font-bold">D<span class="text-primary-red">R</span>  <img class="h-8 w-8" src="/src/assets/img/icons/ai2.png" alt=""> </h2>
         </router-link>

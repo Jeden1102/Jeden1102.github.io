@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-24 bg-white flex items-center justify-around">
+    <div class="w-full h-16 md:h-24 bg-white flex items-center justify-around">
         <router-link  :to="{name:'Home'}">
             <h2 class="flex text-3xl font-bold">Dominik <span class="text-primary-red">Raducki</span>  <img class="h-8 w-8" src="/src/assets/img/icons/ai2.png" alt=""> </h2>
         </router-link>

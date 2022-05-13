@@ -2,4 +2,5 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
 import router from './router'
-createApp(App).use(router).mount('#app')
+import VueCookies from 'vue-cookies'
+createApp(App).use(router,VueCookies).mount('#app')

@@ -39,37 +39,93 @@
     "backEnd":{
         "PHP":{
             "name":"PHP7",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
-            "rating":4
+            "desc":"First back-end language which I've learned in school an by myself even though it is believied that it's old-modern I liked it and feel quite strong.",
+            "rating":3
         },
         "SQL":{
             "name":"SQL",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
+            "desc":"Query langugage which I've learned in school, I really like it and feel good.",
             "rating":3
+        },
+        "Laravel":{
+            "name":"Laravel",
+            "desc":"First PHP framework which I've decided to learn, I've choosed it over Symphony becouse I've heared it's easier to learn, but still give a lot of powerfull features. Most of my APIs are written in Laravel.",
+            "rating":3
+        },
+        "NodeJS":{
+            "name":"NodeJS",
+            "desc":"JS as a back-end, when I've heared of that idea I thought it could be something for me, but I didn't felt this technology and stopped learning. Anyway I'd still like to go back and try again. With the help of docs I think that i could do some small REST APIs with node.",
+            "rating":1
         }
     },
     "others":{
-        "Insomnia":{
-            "name":"Insomnia",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
-            "rating":4
+        "Insomnia/Postman":{
+            "name":"Insomnia/Postman",
+            "desc":"I used both of them to test my APIs. First I've only used Postman but after a while I started to use Insomnia and I really liked it.",
+            "rating":3
+        },
+        "Github/Heroku":{
+            "name":"Github/Heroku",
+            "desc":"I am using both of them to store and serve my projects. I am familliar to basic Git commands.",
+            "rating":3
+        },
+        "C#/Python":{
+            "name":"C#/Python",
+            "desc":"Both of these languages were taught in school, I know how to write basic algorythms, but I'm not into those technologies.",
+            "rating":2
         },
         "PhotoShop":{
             "name":"PhotoShop",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
-            "rating":3
+            "desc":"I have some basic skills in PhotoShop",
+            "rating":1
         }
     },
     "projects":{
         "Pizzeria Client View":{
             "name":"Pizzeria Client View",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. PHP",
-            "rating":4
+            "desc":"Pizzeria web-page based on admin panel descipted below. User is allowed to set orders through this webpage.",
+            "url":"https://dominikraducki.works/FoodPenguin/#/",
+            "technologies":["Laravel","Vue","Axios","TailwindCSS"]
         },
         "Pizzeria Admin Panel":{
             "name":"Pizzeria Admin Panel",
-            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi laboriosam quisquam magnam voluptatem suscipit. SQL",
-            "rating":3
+            "desc":"On of my biggest project which is Admin Panel for a restaurant, it allows an user for example to make CRUD operations on products/waiters, change the resturant view and moreo thers features. Front view is written in VUE and API in Laravel.",
+            "url":"https://dominikraducki.works/ResAdmin/#/",
+            "technologies":["Laravel","Vue","Axios","VueBootstrap","SCSS"]
+        },
+        "MergeIT":{
+            "name":"MergeIT",
+            "desc":"Business card page made for it company.",
+            "commercial":true,
+            "url":"https://mergeit.cc",
+            "technologies":["PHP","SCSS"]
+        },
+        "WeatherApp":{
+            "name":"WeatherApp",
+            "desc":"What a portfolio would it be without an weather app ? :D I've created it based on some youtube tutorial, but made a lot of changes and added own features so I've decided to placed it in projects page.",
+            "url":"https://dominikraducki.works/WeatherApp/",
+            "technologies":["VUE","SCSS","Firebase"]
+        },
+        "Dance Contest WebPage":{
+            "name":"Dance Contest WebPage",
+            "commercial":true,
+            "desc":"Web-page with custom admin panel which is used for selling tickets for and International Dancing Contest. It is integrated with Przelewy24 payment system. It is currently in production so I can't show the link. I can show the work at the interview if there would a need. ",
+            "url":"restricted",
+            "technologies":["Laravel","TailwindCSS"]
+        },
+        "Cleaning company admin panel":{
+            "name":"Cleaning company admin panel",
+            "commercial":true,
+            "desc":"Custom admin panel which is used for managing cleaning orders.  It is currently in production so I can't show the link. I can show the work at the interview if there would a need. ",
+            "url":"restricted",
+            "technologies":["Laravel","SCSS"]
+        },
+        "Adventure park web-page":{
+            "name":"Adventure park web-page",
+            "commercial":true,
+            "desc":"Business card page made for local adventure park.",
+            "url":"http://164.132.168.131/plesk-site-preview/epic-panini.164-132-168-131.plesk.page/https/164.132.168.131/offers.php",
+            "technologies":["PHP","TailwindCSS"]
         }
     }
 }
