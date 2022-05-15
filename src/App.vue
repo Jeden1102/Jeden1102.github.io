@@ -28,4 +28,5 @@ import Footer from './components/Footer.vue'
   text-align: center;
   color: #2c3e50;
 }
+
 </style>

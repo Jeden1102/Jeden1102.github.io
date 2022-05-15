@@ -4,7 +4,7 @@
         <router-link  :to="{name:'list'}"><MyButton variant="red">Displayed in list</MyButton></router-link>
         <router-link :to="{name:'fancy'}"><MyButton variant="white">Displayed in fancy style</MyButton></router-link>
         </div>
-        <div class="w-full min-h-screen bg-white text-black rounded-lg">
+        <div class="w-full min-h-screen  text-black rounded-lg">
         <router-view></router-view>
         </div>
 

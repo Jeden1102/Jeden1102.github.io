@@ -36,7 +36,7 @@ import emailjs from '@emailjs/browser';
     export default {
         components:{
             MyButton,
-            Loading
+            Loading,
         },
         data() {
             return {

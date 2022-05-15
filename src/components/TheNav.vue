@@ -37,4 +37,15 @@
     transition: .3s;
 
 }
+
+.router-link-active::after{
+    width:100%;
+    height:1px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background:rgb(241, 163, 163);
+    content: '';
+    transition: .3s;
+}
 </style>
