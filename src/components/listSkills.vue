@@ -1,9 +1,9 @@
 <template>
-    <div class="w-11/12 bg-gray-100 mx-auto p-4 rounded-lg">
+    <div class="w-full sm:w-11/12 bg-gray-100 mx-auto sm:p-4 rounded-lg">
         <h2 class="text-3xl">{{ selectedOption.title }}</h2>
         <div class="flex flex-wrap">
             <div v-for="skill in selectedOption">
-                <div v-if="skill.name && !skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-72 h-96 relative">
+                <div v-if="skill.name && !skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-full sm:w-72 h-full sm:h-96 relative">
                     <div v-if="!skill.url" class="h-full">
                         <div class="h-1/2 flex items-center flex-col w-full">
                             <div v-if="skill.rating" class="flex space-x-1 ">
@@ -18,7 +18,7 @@
                     </div>
 
                 </div>
-                <div v-if="skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-96 h-96 relative">
+                <div v-if="skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-full sm:w-96  h-full sm:h-96 relative">
                     <div class="h-full">
                         <ProjectCard :skillData="skill"/>
                     </div>
