@@ -10,7 +10,7 @@
                                 <img v-for="num in skill.rating" class="h-3 mt-1" src="/src/assets/img/icons/star.png" alt="">
                             </div>
                             <h2 class="text-3xl break-all ">{{skill.name}}</h2>
-                            <img class="h-24" :src="`'/src/assets/img/icons/${skill.img}'`" alt="">
+                            <img class="h-24" :src="`/src/assets/img/icons/${skill.img}`" alt="">
                         </div>
                         <div class="h-1/2">
                             <p class="pt-2">{{skill.desc}}</p>

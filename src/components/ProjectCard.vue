@@ -30,7 +30,7 @@ import MyButton from '/src/components/MyButton.vue'
         methods: {
             handleClick(imageUrl){
               console.log(imageUrl);
-              let url =`'/src/assets/img/${imageUrl}'`; 
+              let url =`/src/assets/img/${imageUrl}`; 
               console.log(url)
               v3ImgPreviewFn(
                 url
