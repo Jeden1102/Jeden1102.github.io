@@ -1,18 +1,21 @@
 <template>
-    <div class="w-full sm:w-11/12 bg-gray-100 mx-auto sm:p-4 rounded-lg">
+    <div class="w-full sm:w-11/12 bg-gray-100 mx-auto pt-4 sm:p-4 rounded-lg">
         <h2 class="text-3xl">{{ selectedOption.title }}</h2>
-        <div class="flex flex-wrap">
+        <h2 class="text-xl" v-if="selectedOption.title == 'Projects'">
+            *Note -> I know that all of these projects are not perfect, code could be clearer and the view could look better. I'm still learning !:)
+        </h2>
+        <div class="flex flex-wrap space-y-1 ">
             <div v-for="skill in selectedOption">
-                <div v-if="skill.name && !skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-full sm:w-72 h-full sm:h-96 relative">
+                <div v-if="skill.name && !skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-11/12 mx-auto sm:w-72 h-full sm:h-96 relative sm:mx-1">
                     <div v-if="!skill.url" class="h-full">
-                        <div class="h-1/2 flex items-center flex-col w-full">
+                        <div class="h-1/3 flex items-center flex-col w-full">
                             <div v-if="skill.rating" class="flex space-x-1 ">
                                 <img v-for="num in skill.rating" class="h-3 mt-1" src="/src/assets/img/icons/star.png" alt="">
                             </div>
                             <h2 class="text-3xl break-all ">{{skill.name}}</h2>
                             <img class="h-24" :src="`/src/assets/img/icons/${skill.img}`" alt="">
                         </div>
-                        <div class="h-1/2">
+                        <div class="h-2/3 mt-8  flex items-center justify-center">
                             <p class="pt-2">{{skill.desc}}</p>
                         </div>
                     </div>

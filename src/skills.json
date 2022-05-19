@@ -11,7 +11,7 @@
         },
         "CSS":{
             "name":"CSS3",
-            "desc":"After a while of learing HTML I've noticed that I'd like to make my pages look prettier, I've learned CSS, and then went ahead and learned some CSS preprocessors and libraries",
+            "desc":"After a while of learing HTML I've noticed that I'd like to make my pages look prettier, I've learned CSS, and then went ahead and learned some CSS preprocessors and libraries. Keywords : transitions, animations, RWD, mobile-rirst.",
             "rating":4,
             "img":"css3.png"
         },
@@ -23,25 +23,25 @@
         },
         "SCSS":{
             "name":"SCSS",
-            "desc":"Preprocessor which I've learned to write CSS faster.",
+            "desc":"Preprocessor which I've learned to write CSS faster, but still if I have a choice I'd better use tailwind to style Web Sites.",
             "rating":3,
             "img":"scss.png"
         },
         "JS":{
             "name":"JavaScript",
-            "desc":"The mother of Web Development, I totally love it and made a lot of Vanilla JS apps to learn WebDev or cheat in some WebGames, but don't tell anybody.",
+            "desc":"The mother of Web Development, I totally love it and made a lot of Vanilla JS apps to learn WebDev or cheat in some WebGames, but don't tell anybody. Keywords : Dom manipulation, Async & Await",
             "rating":4,
             "img":"js.png"
         },
         "VUE":{
             "name":"Vue3",
-            "desc":"First JS framwork which I've decided to learn, the decision of choosing between vue/react or angular was spontanious and at this moment I'm happy that I've choosen Vue. Btw. porfolio is writted in Vue as well.",
+            "desc":"First JS framwork which I've decided to learn, the decision of choosing between vue/react or angular was spontanious and at this moment I'm happy that I've choosen Vue. Btw. porfolio is writted in Vue as well. Kewywords: vuex, vuerouter, vuetify,transitions.",
             "rating":4,
             "img":"vue.png"
         },
         "Angular":{
             "name":"Angular",
-            "desc":"Next JS framwork which I've been learning for a while in school, I'm not strong in it but with the help of docs I'm sure I'd create some small apps.",
+            "desc":"Next JS framwork which I've been learning for a while in school, I'm not strong in it but with the help of docs I'm sure I'd create some small apps. While learning Angular framework I've also learned a bit of basic TypeScript.",
             "rating":2,
             "img":"angular.png"
         }
@@ -71,7 +71,7 @@
         },
         "NodeJS":{
             "name":"NodeJS",
-            "desc":"JS as a back-end, when I've heared of that idea I thought it could be something for me, but I didn't felt this technology and stopped learning. Anyway I'd still like to go back and try again. With the help of docs I think that i could do some small REST APIs with node.",
+            "desc":"JS as a back-end, when I've heared of that idea I thought it could be something for me, but I didn't felt this technology and stopped learning. Anyway I'd still like to go back and try again.",
             "rating":1,
             "img":"NodeJS.png"
 
@@ -99,6 +99,12 @@
             "rating":2,
             "img":"c-sharp.png"
         },
+        "Xamarin":{
+            "name":"Xamarin",
+            "desc":"This technology was taught in school, I really loved doing apps for smartphones so I will hopefully soon learn how to write MobileApps in React Native",
+            "rating":2,
+            "img":"xamarin.png"
+        },
         "PhotoShop":{
             "name":"PhotoShop",
             "desc":"I have some basic skills in PhotoShop",
@@ -114,15 +120,25 @@
             "name":"Pizzeria Client View",
             "desc":"Pizzeria web-page based on admin panel descipted below. User is allowed to set orders through this webpage.",
             "url":"https://dominikraducki.works/FoodPenguin/#/",
+            "urlCode":"https://github.com/Jeden1102/FoodPenguin",
             "showView":true,
             "technologies":["Laravel","Vue","Axios","TailwindCSS"]
         },
         "Pizzeria Admin Panel":{
             "name":"Pizzeria Admin Panel",
-            "desc":"On of my biggest project which is Admin Panel for a restaurant, it allows an user for example to make CRUD operations on products/waiters, change the resturant view and moreo thers features. Front view is written in VUE and API in Laravel.",
+            "desc":"On of my biggest project which is Admin Panel for a restaurant, it allows an user for example to make CRUD operations on products/waiters, change the resturant view and moreo thers features. Front view is written in VUE and API in Laravel. Access : @ : dominik@o2.pl pwd : dominik",
             "url":"https://dominikraducki.works/ResAdmin/#/",
+            "urlCode":"https://github.com/Jeden1102/ResAdmin",
             "showView":true,
-            "technologies":["Laravel","Vue","Axios","VueBootstrap","SCSS"]
+            "technologies":["Vue","Axios","VueBootstrap","SCSS"]
+        },
+        "Pizzeria Admin Panel API":{
+            "name":"Pizzeria Admin Panel API",
+            "desc":"API written in Laravel for previous project.",
+            "url":"https://github.com/Jeden1102/Res-Admin-API",
+            "urlCode":"https://github.com/Jeden1102/Res-Admin-API",
+            "showView":true,
+            "technologies":["Laravel"]
         },
         "MergeIT":{
             "name":"MergeIT",
@@ -137,6 +153,7 @@
             "desc":"What a portfolio would it be without an weather app ? :D I've created it based on some youtube tutorial, but made a lot of changes and added own features so I've decided to placed it in projects page.",
             "showView":true,
             "url":"https://dominikraducki.works/WeatherApp/",
+            "urlCode":"https://github.com/Jeden1102/WeatherApp",
             "technologies":["VUE","SCSS","Firebase"]
         },
         "Dance Contest WebPage":{

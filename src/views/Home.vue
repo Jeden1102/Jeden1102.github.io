@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center justify-center">
-        <div class="flex flex-col md:flex-row space-y-4 md:space-x-20">
+    <div class="flex  items-center justify-center">
+        <div class="flex  flex-col md:flex-row space-y-4 md:space-x-20">
             <div class="flex items-center justify-center flex-col space-y-2">
                 <h1 class="text-5xl font-bold">Hello! I'm Dominik</h1>
                 <h3 class="text-2xl text-primary-red">Main skills:</h3>

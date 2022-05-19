@@ -9,8 +9,8 @@
           </div>
         </div>
         <div class="flex" v-if="skillData.showView">
-          <a :href="skillData.url" target="_blank"><MyButton class="w-32 flex items-center justify-center bg-gray-700 text-white border border-black" >Preview <img src="/src/assets/img/icons/search.png" class="h-8 mx-2" alt=""></MyButton></a>
-          <a :href="skillData.url" target="_blank"><MyButton class="w-32 flex items-center justify-center bg-white text-black border border-gray-400" >Code <img src="/src/assets/img/icons/programming-code-signs.png" class="h-8 mx-2" alt=""></MyButton></a>
+          <a v-if="skillData.url" :href="skillData.url" target="_blank"><MyButton class="w-32 flex items-center justify-center bg-gray-700 text-white border border-black" >Preview <img src="/src/assets/img/icons/search.png" class="h-8 mx-2" alt=""></MyButton></a>
+          <a  v-if="skillData.urlCode" :href="skillData.urlCode" target="_blank"><MyButton class="w-32 flex items-center justify-center bg-white text-black border border-gray-400" >Code <img src="/src/assets/img/icons/programming-code-signs.png" class="h-8 mx-2" alt=""></MyButton></a>
         </div>
         <div v-if="!skillData.showView">
           <p>Unfortunately I'cant show you the code and live view, but still here are some photos of this project.</p>

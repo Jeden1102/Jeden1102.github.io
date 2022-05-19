@@ -8,7 +8,7 @@
                 </div>
             </MyButton>
         </router-link>
-        <router-view>
+        <router-view class="pb-12">
         </router-view>
 
     </div>
