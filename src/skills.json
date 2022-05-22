@@ -179,7 +179,7 @@
             "commercial":true,
             "showView":true,
             "desc":"Business card page made for local adventure park.",
-            "url":"http://164.132.168.131/plesk-site-preview/epic-panini.164-132-168-131.plesk.page/https/164.132.168.131/index.php",
+            "url":"https://kanyon.pl",
             "technologies":["PHP","TailwindCSS"]
         }
     }

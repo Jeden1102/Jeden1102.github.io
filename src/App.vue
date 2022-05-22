@@ -9,7 +9,9 @@ import Footer from './components/Footer.vue'
 
 <template>
 <TheNav />
-  <router-view class="min-h-screen bg-primary-gray w-full text-white font-bold lg:px-20 py-4 mx-auto pb-40 sm:pb-4"/>
+  <transition name="fade" mode="out-in">
+    <router-view class="min-h-screen bg-primary-gray w-full text-white font-bold lg:px-20 py-4 mx-auto pb-40 sm:pb-4"/>
+  </transition>
   <TheMobileNav class="sm:hidden"/>
   <Footer/>
 </template>
@@ -27,6 +29,16 @@ import Footer from './components/Footer.vue'
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease;
+}
+
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0.4;
 }
 
 </style>

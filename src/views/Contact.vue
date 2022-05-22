@@ -10,8 +10,8 @@
                     </h1>
                     <img src="/src/assets/img/icons/contact.png" class="h-8" alt="">
                     </div>
-                    <p>Phone : 516 525 133</p>
-                    <p>E-mail : dominik.raducki@onet.pl</p>
+                    <p>516 525 133</p>
+                    <p>dominik.raducki@onet.pl</p>
                     <p>
                         Feel free to contact with me. I'm opened to any propositions. Use this contact form or any of ways to contact me below:
                     </p>

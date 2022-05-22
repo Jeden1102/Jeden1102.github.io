@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory,createWebHashHistory } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Home from './views/Home.vue'
 import Contact from './views/Contact.vue'
@@ -9,7 +9,12 @@ import SkillsFancyList from './components/SkillsFancyList.vue'
 import SkillsList from './components/SkillsList.vue'
 import listSkills from './components/listSkills.vue'
 const router =   createRouter({
-  history: createWebHistory(),
+  mode: "hash",
+  history:createWebHashHistory(),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0,behavior: 'smooth' }
+  },
   routes: [
     {
       path: '/',
@@ -69,5 +74,10 @@ const router =   createRouter({
 router.beforeEach((to,from,next)=>{
   document.title = to.meta.title;
   return next();
+})
+router.afterEach((to, from) => {
+  const toDepth = to.path.split('/').length
+  const fromDepth = from.path.split('/').length
+  to.meta.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
 })
 export default router;
