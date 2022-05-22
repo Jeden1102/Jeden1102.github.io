@@ -37,7 +37,7 @@ import axios from 'axios';
         },
         methods: {
             downloadCV(){
-                axios.get('/src/cv.pdf',{
+                axios.get('/src/assets/cv.pdf',{
                 responseType: 'blob'
                 }).then(res=>{
                     saveAs(res.data,'Dominik-Raducki-CV.pdf')
