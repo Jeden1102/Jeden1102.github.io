@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-16 bg-white flex items-center justify-around fixed left-0 bottom-0">
+    <div class="mobile-nav w-full h-16 bg-white flex items-center justify-around fixed left-0 bottom-0">
 
         <div class="  flex w-full">
             <router-link class="font-bold w-1/4 link flex items-center justify-center flex-col" :to="{name:'Home'}">

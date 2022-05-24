@@ -5,7 +5,7 @@
         <router-link :to="{name:'fancy'}"><MyButton variant="white">Displayed in fancy style</MyButton></router-link>
         </div>
         <div class="w-full min-h-screen  text-black rounded-lg">
-        <router-view></router-view>
+        <router-view @hide-nav="hideMobileNav"></router-view>
         </div>
 
         
@@ -15,9 +15,19 @@
 <script>
 import MyButton from '/src/components/MyButton.vue';
     export default {
+        data() {
+            return {
+            }
+        },
         components:{
             MyButton
-        }
+        },
+        methods: {
+            hideMobileNav(){
+                let mobileNav = document.querySelector('.mobile-nav');
+                mobileNav.classList.toggle('hidden')
+            }
+        },
     }
 </script>
 

@@ -96,14 +96,16 @@ import skills from '/src/skills.json'
                     this.txt = '';
                     return;
                 }
-                let res = skills[foundResult];
+                let res = '';
+                res = skills[foundResult];
+                if(foundResult == 'help'){
+                    res = 'Use commands below to look for skills your are interested in: "front","back","others","projects","clear"';
+                }
                 if(res == undefined){
                     res = 'undefined';
                 }
                 let toPush = {question:this.txt,answer:res};
                 this.searchedResults.push(toPush);
-                console.log(this.searchedCommands)
-                console.log(this.previousCommandsLength)
                 this.txt = '';
                 this.currentCommandIndex = this.previousCommandsLength;
             },

@@ -7,7 +7,7 @@
         <MyTooltip v-on:hide="showTooltipMethod" v-if="showTooltip" />
             <div v-if="!this.$route.params.details" class="flex items-center justify-center flex-col w-full min-h-screen">
                 <img src="/src/assets/img/google_logo.png" alt="">
-                <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4" >
+                <input @focus="hideMobileNav" @blur="hideMobileNav" @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4" >
                 <div class="flex">
                     <button @click="goToPage"  class="search-btn">Google search</button>
                     <button @click="randomPage" class="search-btn">I'm Feeling Lucky</button>
@@ -48,6 +48,9 @@ import MyConsole from '/src/components/MyConsole.vue';
             }
         },
         methods: {
+            hideMobileNav(){
+                this.$emit('hide-nav');
+            },
             goToPage(){
                 //w lucky traf dać easter egga -> TO TEN EASTER EGG, WIĘCEJ NIE MA :) OBIECUJĘ
                 this.$router.push({name:'fancyList',params:{details:this.searchInput}});

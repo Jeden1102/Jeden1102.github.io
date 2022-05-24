@@ -21,7 +21,7 @@
                     </div>
 
                 </div>
-                <div v-if="skill.url" class="p-4 m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-full sm:w-96  h-full sm:h-96 relative">
+                <div v-if="skill.url" class="p-4 sm:m-4 flex items-center bg-gray-200  flex-col border-2 border-gray-300 rounded-md w-full sm:w-96  h-full sm:h-96 relative">
                     <div class="h-full">
                         <ProjectCard :skillData="skill"/>
                     </div>
