@@ -1,5 +1,5 @@
 <template>
-    <div class="h-full flex items-center flex-col w-full relative">
+    <div class="h-full flex items-center flex-col w-full py-4 relative">
         <h2 class="text-3xl break-all ">{{skillData.name}}</h2>
         <p>{{skillData.desc}}</p>
         <p>Technologies used:</p>

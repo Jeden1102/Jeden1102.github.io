@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full p-4 text-lg absolute left-50 top-50 tootlip flex items-center justify-center bg-gray-100 text-black border border-black rounded-lg flex-col">
+    <div class="w-screen h-screen p-4 text-lg fixed left-0 top-0 z-50 tootlip flex items-center justify-center bg-gray-100 text-black border border-black rounded-lg flex-col">
         <h1 class="text-4xl">Hi!</h1>
         <p>In this section you can search for my skills and projects by typing in "Google" phrases showed below : </p>
         <p >"front-end" : for my skills connected with Front-End development </p>

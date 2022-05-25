@@ -25,6 +25,8 @@ import MyButton from '/src/components/MyButton.vue';
         methods: {
             hideMobileNav(){
                 let mobileNav = document.querySelector('.mobile-nav');
+                let toolTipBtn =  document.querySelector('.tool-tip-btn');
+                toolTipBtn.classList.toggle('hidden')
                 mobileNav.classList.toggle('hidden')
             }
         },

@@ -3,7 +3,7 @@
         <router-link class="mx-auto sm:mx-0 " :to="{name:'fancy'}">
             <img class="small-logo mx-auto " src="/src/assets/img/google_logo.png" alt="">
         </router-link>
-        <input @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4 mx-auto sm:mx-0" >
+        <input @focus="hideMobileNav" @blur="hideMobileNav" @keyup.enter="goToPage" v-model="searchInput" type="text" class="search-input mt-8 px-4 mx-auto sm:mx-0" >
     </div>
     <div  class="flex items-start w-full p-4">
     <p v-if="skillsList[searchedOption]">About {{ Object.keys( skillsList[searchedOption] ).length-3}} results  (0.33s) </p>
@@ -44,7 +44,7 @@
         <img src="/src/assets/img/not_found.svg" class="h-72" alt="">
     </div>    
     <div v-if="searchedOption == 'help'" class="flex w-full flex-col items-start  text-left p-8" >
-        <p class="w-2/3">Wow ! Is there really a need to help ? Pperation of this application is similar to way google works, the application is intuitive as all of my appliactions are :)) so I dont see any reasons to help...anyway:</p>
+        <p class="w-2/3">Wow ! Is there really a need to help ? Operation of this application is similar to way google works, the application is intuitive as all of my appliactions are :)) so I dont see any reasons to help...anyway:</p>
         <p>To look what interest you about my person just type one of these words in search bar above</p>
         <p >"front-end" : for my skills connected with Front-End development </p>
         <p>"back-end" : for my skills connected with Front-End development </p>
@@ -67,6 +67,12 @@ import skills from '/src/skills.json'
             goToPage(){
                 this.$router.push({name:'fancyList',params:{details:this.searchInput}});
                 this.searchInput = '';
+            },
+            hideMobileNav(){
+                let mobileNav = document.querySelector('.mobile-nav');
+                let toolTipBtn =  document.querySelector('.tool-tip-btn');
+                toolTipBtn.classList.toggle('hidden')
+                mobileNav.classList.toggle('hidden')
             }
         },
         computed:{

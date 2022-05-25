@@ -1,6 +1,6 @@
 <template>
     <div @contextmenu.prevent="showMenuTooltip($event)" @mousedown="hideMenuTooltip" class="flex items-center bg-white justify-center flex-row w-full min-h-screen relative">
-        <button @click="showTooltipMethod" class="fixed w-16 h-16 flex items-center justify-center lg:absolute bottom-28 lg:top-8 right-8 bg-gray-200 border border-gray-400 text-white p-4 rounded-lg">
+        <button @click="showTooltipMethod" class="fixed tool-tip-btn w-16 h-16 flex items-center justify-center lg:absolute bottom-28 lg:top-8 right-8 bg-gray-200 border border-gray-400 text-white p-4 rounded-lg">
             <img src="/src/assets/img/icons/question.png" class="h-8" alt="">
         </button>
         <MyContextMenu ref="contextMenu" tabindex="0" :displayMenu="showContextMenu" :top="topMouse" :left="leftMouse" v-on:show-console="showHideConsole"/>
@@ -52,7 +52,6 @@ import MyConsole from '/src/components/MyConsole.vue';
                 this.$emit('hide-nav');
             },
             goToPage(){
-                //w lucky traf dać easter egga -> TO TEN EASTER EGG, WIĘCEJ NIE MA :) OBIECUJĘ
                 this.$router.push({name:'fancyList',params:{details:this.searchInput}});
                 this.searchInput = '';
             },
